@@ -4,8 +4,9 @@ import classes from './AddPost.module.css'
 
 const AddPost = () => {
     return (
-        <div>
-
+        <div className={classes.add_post}>
+            <textarea /><br />
+            <button>Add post</button>
         </div>
     )
 }

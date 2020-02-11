@@ -5,7 +5,7 @@ import classes from './DialogsContainer.module.css'
 const DialogsContainer = () => {
     return (
         <div>
-
+            Dialogs
         </div>
     )
 }

@@ -1,0 +1,25 @@
+.profile_info_wrap {
+    display: flex;
+    padding: 2vw 4vw;
+}
+
+.profile_info_img {
+    width: 9vw;
+    margin-right: 2.6vw;
+}
+
+.profile_info_img img {
+    width: 100%;
+}
+
+.profile_info {
+
+}
+
+.profile_info h2 {
+    margin-bottom: 1.3vw;
+}
+.profile_info p {
+    margin-bottom: .6vw;
+    font-weight: 700;
+}

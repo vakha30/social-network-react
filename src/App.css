@@ -1,13 +1,23 @@
-* {
-  margin: 0;
-  height: 0;
-  box-sizing: border-box;
+.app-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2.5fr 9.5fr;
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+;
 }
 
-ul {
-  list-style: none;
-}
+/*@media screen and (max-width: 760px) {*/
+/*    .app-wrapper {*/
+/*        display: block;*/
+/*    }*/
+/*}*/
 
-a {
-  text-decoration: none;
+.content {
+    background-color: blue;
+    grid-area: content;
 }

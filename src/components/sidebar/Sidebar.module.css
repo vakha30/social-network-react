@@ -1,3 +1,5 @@
 .sidebar {
-
+    background-color: #56fdff;
+    grid-area: sidebar;
+    padding: 2vw 4vw;
 }

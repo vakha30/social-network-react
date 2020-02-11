@@ -1,3 +1,34 @@
 .menu {
 
 }
+
+.menu li {
+    margin-bottom: 2vw;
+}
+
+.menu a {
+    text-transform: uppercase;
+    color: #282c34;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: .3vw;
+}
+
+.menu a::after {
+    content: '';
+    width: 100%;
+    height: .2vw;
+    background-color: #282c34;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+    transform: scaleX(0);
+}
+.menu a:hover::after {
+    transform: scaleX(1);
+}
+
+.menu a.active::after{
+    transform: scaleX(1);
+}

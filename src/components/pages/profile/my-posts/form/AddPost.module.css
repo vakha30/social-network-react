@@ -1,0 +1,20 @@
+.add_post {
+
+}
+
+.add_post textarea {
+    width: 25vw;
+    height: 5vw;
+    padding: .3vw 1vw;
+    margin-bottom: .5vw;
+}
+
+.add_post button {
+    background-color: #56fdff;
+    border: none;
+}
+
+.add_post button:hover {
+    opacity: .8;
+}
+

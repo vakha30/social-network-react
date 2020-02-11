@@ -4,7 +4,7 @@ import classes from './BgProfile.module.css'
 
 const BgProfile = () => {
     return (
-        <div>
+        <div className={classes.profile_bg}>
 
         </div>
     )

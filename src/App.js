@@ -1,15 +1,29 @@
 import React from 'react';
+import {BrowserRouter, Route} from "react-router-dom";
 
 import './App.css';
 
-import Header from './components/header/Header'
+import Header from './components/header/Header';
+import Sidebar from "./components/sidebar/Sidebar";
+import Profile from "./components/pages/profile/Profile";
+import News from "./components/pages/news/News";
+import DialogsContainer from "./components/pages/dialogs/DialogsContainer";
 
-const  App = () => {
-  return (
-    <div className="App">
-      <Header />
-    </div>
-  );
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <div className="app-wrapper">
+                <Header/>
+                <Sidebar/>
+                <main className="content">
+                    <Route exact path="/" render={() => <Profile />} />
+                    <Route path="/dialogs" render={() => <DialogsContainer />} />
+                    <Route path="/news" render={() => <News />} />
+                </main>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

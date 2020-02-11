@@ -1,4 +1,10 @@
 .header {
-    height: 100px;
+    padding: 1vw 4vw;
     background-color: #282c34;
+    grid-area: header;
+}
+
+.header img {
+    width: 5vw;
+    border-radius: 50%;
 }
