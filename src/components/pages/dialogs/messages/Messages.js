@@ -5,10 +5,11 @@ import Message from "./message/Message";
 import MessageSend from "./message-send/MessageSend";
 
 const Messages = (props) => {
+    const messagesComponents = props.messages.map(message => <Message key={message.id} message={message}/>)
     return (
         <div className={classes.messages_wrap}>
             <div className={classes.messages}>
-                <Message />
+                {messagesComponents}
             </div>
             <MessageSend />
         </div>

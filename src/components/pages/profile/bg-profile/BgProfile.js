@@ -2,9 +2,14 @@ import React from 'react';
 
 import classes from './BgProfile.module.css'
 
-const BgProfile = () => {
+const BgProfile = (props) => {
+
+    const bgStyle = {
+        "backgroundImage": `url(${props.bg})`
+    }
+
     return (
-        <div className={classes.profile_bg}>
+        <div style={bgStyle} className={classes.profile_bg}>
 
         </div>
     )

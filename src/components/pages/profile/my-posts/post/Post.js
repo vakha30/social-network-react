@@ -11,12 +11,10 @@ const Post = (props) => {
                          alt=""/>
                 </div>
                 <div className={classes.post_message}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam, consequatur ducimus ex
-                    fuga iste libero magni minus molestiae natus neque nobis placeat porro possimus rem, sed tenetur,
-                    veritatis.
+                    {props.post.post}
                 </div>
             </div>
-            <span>Like: 0</span>
+            <span>Like: {props.post.like}</span>
         </div>
     )
 }

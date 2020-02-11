@@ -1,5 +1,7 @@
 .profile_bg {
     width: 100%;
     height: 8vw;
-    background-color: #5f8df0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

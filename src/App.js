@@ -9,16 +9,15 @@ import Profile from "./components/pages/profile/Profile";
 import News from "./components/pages/news/News";
 import DialogsContainer from "./components/pages/dialogs/DialogsContainer";
 
-
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
                 <Header/>
                 <Sidebar/>
                 <main className="content">
-                    <Route exact path="/" render={() => <Profile />} />
-                    <Route path="/dialogs" render={() => <DialogsContainer />} />
+                    <Route exact path="/" render={() => <Profile addNewPost={props.addNewPost} profilePage={props.state.profilePage} newPost={props.state.newPost} />} />
+                    <Route path="/dialogs" render={() => <DialogsContainer dialogsPage={props.state.dialogsPage}  />} />
                     <Route path="/news" render={() => <News />} />
                 </main>
             </div>

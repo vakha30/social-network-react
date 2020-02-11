@@ -4,11 +4,10 @@ import classes from './Dialogs.module.css'
 import Dialog from "./dialog/Dialog";
 
 const Dialogs = (props) => {
+    const dialogsComponents = props.dialogs.map(dialog => <Dialog key={dialog.id} dialog={dialog}/>)
     return (
         <div className={classes.dialogs}>
-            <Dialog id={1}/>
-            <Dialog id={2} />
-            <Dialog id={3} />
+            {dialogsComponents}
         </div>
     )
 }
