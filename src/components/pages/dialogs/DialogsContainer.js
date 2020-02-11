@@ -1,11 +1,14 @@
 import React from 'react';
 
 import classes from './DialogsContainer.module.css'
+import Dialogs from "./dialogs/Dialogs";
+import Messages from "./messages/Messages";
 
 const DialogsContainer = () => {
     return (
-        <div>
-            Dialogs
+        <div className={classes.dialogs_wrap}>
+            <Dialogs />
+            <Messages />
         </div>
     )
 }

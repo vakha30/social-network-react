@@ -1,0 +1,7 @@
+.dialogs_wrap {
+    display: flex;
+    padding: 2vw 4vw;
+    width: 49vw;
+    justify-content: space-between;
+    height: 100%;
+}

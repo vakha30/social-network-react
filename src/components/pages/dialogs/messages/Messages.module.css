@@ -1,0 +1,43 @@
+.messages_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.message {
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+    border: .09vw solid #56fdff;
+    padding: .4vw 1vw .8vw;
+    width: 25vw;
+}
+
+.message p {
+    color: linen;
+}
+
+.message_send {
+    display: flex;
+    padding-top: 2vw;
+}
+
+.message_send textarea{
+    resize: none;
+    width: 100%;
+    padding: .3vw 1vw;
+    height: 2.2vw;
+    border-bottom-left-radius: .2vw;
+    border-top-left-radius: .2vw;
+    opacity: .7;
+    outline: none;
+}
+
+.message_send textarea::placeholder {
+    font-size: 1vw;
+}
+
+.message_send button {
+    background-color: #cccccc;
+}
+

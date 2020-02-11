@@ -1,9 +1,11 @@
 .app-wrapper {
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 1.5fr 10.5fr;
     grid-template-columns: 2.5fr 9.5fr;
     grid-template-areas:
     "header header"

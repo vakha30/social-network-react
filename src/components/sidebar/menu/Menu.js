@@ -10,10 +10,10 @@ const Menu = () => {
                 <NavLink exact to="/" activeClassName={classes.active}>Profile</NavLink>
             </li>
             <li>
-                <NavLink to="dialogs" activeClassName={classes.active}>Dialogs</NavLink>
+                <NavLink to="/dialogs" activeClassName={classes.active}>Dialogs</NavLink>
             </li>
             <li>
-                <NavLink to="news" activeClassName={classes.active}>News</NavLink>
+                <NavLink to="/news" activeClassName={classes.active}>News</NavLink>
             </li>
         </ul>
     )

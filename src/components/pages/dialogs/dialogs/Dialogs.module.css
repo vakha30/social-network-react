@@ -1,0 +1,20 @@
+.dialogs {
+    border-right: .1vw solid #cccccc;
+    padding-right: 5vw;
+}
+
+.dialog {
+    margin-bottom: .6vw;
+    border-bottom: .1vw solid #fff;
+    padding: 0 2vw 0.5vw 2vw;
+}
+
+.dialog a {
+    color: linen;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dialog a.active {
+    color: #56fdff;
+}
