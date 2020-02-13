@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fc85651-ece2-4e70-b34c-3cf23eb563dd" name="Default Changelist" comment="" />
+    <list default="true" id="7fc85651-ece2-4e70-b34c-3cf23eb563dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/dialogs/DialogsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/dialogs/DialogsContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/dialogs/messages/Messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/dialogs/messages/Messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/dialogs/messages/message-send/MessageSend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/dialogs/messages/message-send/MessageSend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/profile/my-posts/MyPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/profile/my-posts/MyPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/profile/my-posts/form/AddPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/profile/my-posts/form/AddPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +62,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581399529277</updated>
-      <workItem from="1581399552386" duration="27866000" />
+      <workItem from="1581399552386" duration="28080000" />
+      <workItem from="1581484375216" duration="1010000" />
+      <workItem from="1581521819476" duration="2257000" />
+      <workItem from="1581594237854" duration="6307000" />
     </task>
     <servers />
   </component>

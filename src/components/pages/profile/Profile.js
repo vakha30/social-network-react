@@ -10,7 +10,7 @@ const Profile = (props) => {
         <div className={classes.profile_wrap}>
             <BgProfile bg={props.profilePage.users[0].bg} />
             <ProfileInfo user={props.profilePage.users[0]} />
-            <MyPosts addNewPost={props.addNewPost} newPost={props.newPost} posts={props.profilePage.posts}/>
+            <MyPosts  handleNewPostChange={props.handleNewPostChange} addNewPost={props.addNewPost} newPost={props.profilePage.newPost} posts={props.profilePage.posts}/>
         </div>
     )
 }

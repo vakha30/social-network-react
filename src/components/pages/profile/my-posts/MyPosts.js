@@ -8,7 +8,7 @@ const MyPosts = (props) => {
     const postsComponents =  props.posts.map(post => <Post key={post.id} post={post}/>)
     return (
         <div className={classes.my_posts}>
-            <AddPost id={props.id} addNewPost={props.addNewPost} newPost={props.newPost} />
+            <AddPost addNewPost={props.addNewPost}  handleNewPostChange={props.handleNewPostChange} newPost={props.newPost} />
             <div className={classes.posts_wrap}>
                 {postsComponents}
             </div>

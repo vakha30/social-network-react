@@ -34,7 +34,8 @@ const state = {
                 post: "I like my social network",
                 like: 65
             }
-        ]
+        ],
+        newPost: "",
     },
     dialogsPage: {
         dialogs: [
@@ -68,26 +69,53 @@ const state = {
                 id: 3,
                 message: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est modi nobis ratione. Consectetur dicta eum exercitationem."
             },
-        ]
+        ],
+        newMessage: ""
     },
-    newPost: ""
+
 }
 
-export const addNewPost = (text, id) => {
-    state.profilePage.posts.push({
-        id: 4,
-        post: text,
-        like: 0
-    })
+export const handleNewPostChange = (text) => {
+    state.profilePage.newPost = text
     rend()
 }
+
+export const addNewPost = (text) => {
+    if (text) {
+        state.profilePage.posts.push({
+            id: state.profilePage.posts[state.profilePage.posts.length-1].id + 1,
+            post: text,
+            like: 0
+        })
+        state.profilePage.newPost = ""
+        rend()
+    }
+}
+
+export const updateMessage = (message) => {
+    state.dialogsPage.newMessage = message;
+    rend();
+}
+
+export const addNewMessage = (text) => {
+    if (text) {
+        let newMessage = {
+            id: state.dialogsPage.messages[state.dialogsPage.messages.length - 1].id + 1,
+            message: text
+        }
+        state.dialogsPage.messages.push(newMessage);
+        state.dialogsPage.newMessage = ""
+        rend();
+    }
+}
+
 
 let rend = () => {
 
 }
 
-export const render = (func) => {
-    rend = func
+export const subscribe = (observer) => {
+    rend = observer
 }
 
 export default state;

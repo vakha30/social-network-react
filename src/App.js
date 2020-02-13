@@ -16,9 +16,19 @@ const App = (props) => {
                 <Header/>
                 <Sidebar/>
                 <main className="content">
-                    <Route exact path="/" render={() => <Profile addNewPost={props.addNewPost} profilePage={props.state.profilePage} newPost={props.state.newPost} />} />
-                    <Route path="/dialogs" render={() => <DialogsContainer dialogsPage={props.state.dialogsPage}  />} />
-                    <Route path="/news" render={() => <News />} />
+                    <Route exact path="/" render={() => <Profile
+                        handleNewPostChange={props.handleNewPostChange}
+                        addNewPost={props.addNewPost}
+                        profilePage={props.state.profilePage}
+                    />}
+                    />
+                    <Route path="/dialogs" render={() => <DialogsContainer
+                        dialogsPage={props.state.dialogsPage}
+                        updateMessage={props.updateMessage}
+                        addNewMessage={props.addNewMessage}
+                    />}
+                    />
+                    <Route path="/news" render={() => <News/>}/>
                 </main>
             </div>
         </BrowserRouter>
