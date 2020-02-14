@@ -7,11 +7,19 @@ const MessageSend = (props) => {
     let textMessage = React.createRef();
 
     const handleChange = () => {
-        props.updateMessage(textMessage.current.value);
+        let {value} = textMessage.current
+        let action = {
+            type: "UPDATE-MESSAGE",
+            message: value
+        }
+        props.dispatch(action)
     }
 
     const handleClick = () => {
-        props.addNewMessage(textMessage.current.value);
+        let action = {
+            type: "ADD-MESSAGE"
+        }
+        props.dispatch(action)
     }
 
     return (

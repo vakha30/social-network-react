@@ -65,11 +65,27 @@
       <workItem from="1581399552386" duration="28080000" />
       <workItem from="1581484375216" duration="1010000" />
       <workItem from="1581521819476" duration="2257000" />
-      <workItem from="1581594237854" duration="6307000" />
+      <workItem from="1581594237854" duration="6788000" />
+      <workItem from="1581662991276" duration="6549000" />
+      <workItem from="1581685897059" duration="8124000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581709254414">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1581709254414" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1581706726986">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1581706726986" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581705729100">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1581705729100" />
   </component>
 </project>

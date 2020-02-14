@@ -8,7 +8,7 @@ const DialogsContainer = (props) => {
     return (
         <div className={classes.dialogs_wrap}>
             <Dialogs dialogs={props.dialogsPage.dialogs} />
-            <Messages messages={props.dialogsPage.messages} newMessage={props.dialogsPage.newMessage}  addNewMessage={props.addNewMessage} updateMessage={props.updateMessage} />
+            <Messages messages={props.dialogsPage.messages} newMessage={props.dialogsPage.newMessage}  dispatch={props.dispatch} />
         </div>
     )
 }

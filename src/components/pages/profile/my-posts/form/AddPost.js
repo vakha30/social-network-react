@@ -5,11 +5,20 @@ import classes from './AddPost.module.css'
 let newPostText = React.createRef();
 
 const AddPost = (props) => {
+
     const handleNewPostChange = () => {
-        props.handleNewPostChange(newPostText.current.value)
+        let text = newPostText.current.value;
+        let action = {
+            type: "UPDATE-POST",
+            post: text
+        }
+        props.dispatch(action);
     }
     const addNewPost = () => {
-        props.addNewPost(newPostText.current.value)
+        let action = {
+            type: "ADD-POST"
+        }
+        props.dispatch(action)
     }
     return (
         <div className={classes.add_post}>

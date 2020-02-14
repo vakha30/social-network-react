@@ -11,7 +11,7 @@ const Messages = (props) => {
             <div className={classes.messages}>
                 {messagesComponents}
             </div>
-            <MessageSend  addNewMessage={props.addNewMessage} updateMessage={props.updateMessage} newMessage={props.newMessage} />
+            <MessageSend  dispatch={props.dispatch} newMessage={props.newMessage} />
         </div>
     )
 }
