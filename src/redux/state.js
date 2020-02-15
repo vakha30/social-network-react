@@ -1,3 +1,6 @@
+import profileReducer from "./reducers/profile-reducer";
+import dialogsReducer from "./reducers/dialogs-reducer";
+
 let store = {
     _render() {
         console.log("not")
@@ -84,51 +87,17 @@ let store = {
         this._render = observer;
     },
 
-    handleNewPostChange(text) {
-        this._state.profilePage.newPost = text;
-        this._render(this.getState());
-    },
-    addNewPost() {
-        if (this._state.profilePage.newPost) {
-            let newPost = {
-                id: this._state.profilePage.posts[this._state.profilePage.posts.length - 1].id + 1,
-                post: this._state.profilePage.newPost,
-                like: 0
-            }
-            this._state.profilePage.posts.push(newPost);
-            this.handleNewPostChange("")
-            this._render(this.getState());
-        }
-
-    },
-    updateMessage(message) {
-        this._state.dialogsPage.newMessage = message;
-        this._render(this.getState());
-    },
-    addNewMessage() {
-        if (this._state.dialogsPage.newMessage) {
-            let newMessage = {
-                id: this._state.dialogsPage.messages[this._state.dialogsPage.messages.length - 1].id + 1,
-                message: this._state.dialogsPage.newMessage
-            }
-            this._state.dialogsPage.messages.push(newMessage);
-            this.updateMessage("")
-            this._render(this.getState());
-        }
-    },
 
     dispatch(action) {
+        this._state.profilePage = profileReducer(this._state.profilePage, action);
+        this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
 
-        if (action.type === "UPDATE-POST") {
-            this.handleNewPostChange(action.post)
-        } else if (action.type === "ADD-POST") {
-            this.addNewPost()
-        } else if (action.type === "UPDATE-MESSAGE") {
-            this.updateMessage(action.message)
-        } else if (action.type === "ADD-MESSAGE") {
-            this.addNewMessage()
-        }
+        this._render(this._state);
     },
 }
+
+
+
+
 
 export default store;

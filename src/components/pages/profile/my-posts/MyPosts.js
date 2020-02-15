@@ -5,7 +5,8 @@ import AddPost from "./form/AddPost";
 import Post from "./post/Post";
 
 const MyPosts = (props) => {
-    const postsComponents =  props.posts.map(post => <Post key={post.id} post={post}/>)
+
+    const postsComponents =  props.posts.map(post => <Post dispatch={props.dispatch} key={post.id} post={post}/>)
     return (
         <div className={classes.my_posts}>
             <AddPost dispatch={props.dispatch} newPost={props.newPost} />
