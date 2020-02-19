@@ -1,0 +1,61 @@
+.todos_wrap {
+    width: 40%;
+    margin: 0 auto;
+    padding: 4vw 0;
+}
+
+.todos_wrap h2 {
+    margin-bottom: 1vw;
+    text-transform: uppercase;
+}
+
+.todo {
+    background-color: #0000dd;
+    border: .1vw solid #cccccc;
+    border-radius: .3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2vw .4vw;
+    margin-bottom: 1vw;
+}
+
+.todo input {
+    margin-right: 1vw;
+}
+
+.todo span {
+    color: aliceblue;
+}
+
+.todo button {
+    background-color: brown;
+}
+.todo button:hover {
+    opacity: .8;
+}
+
+.todo_form {
+    width: 100%;
+}
+
+.todo_form textarea {
+    width: 100%;
+    resize: none;
+    padding: .3vw 1vw .1vw 1vw;
+}
+
+.todo_form_btn {
+    text-align: center;
+    padding-top: .6vw;
+}
+
+.todo_form_btn button {
+    padding: .5vw 3vw;
+    color: #282c34;
+    background-color: aqua;
+}
+
+.todo_form_btn button:hover {
+    opacity: .8;
+}

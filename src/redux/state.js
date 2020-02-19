@@ -1,5 +1,6 @@
 import profileReducer from "./reducers/profile-reducer";
 import dialogsReducer from "./reducers/dialogs-reducer";
+import todosReducer from "./reducers/todos-reducer";
 
 let store = {
     _render() {
@@ -79,6 +80,26 @@ let store = {
             ],
             newMessage: ""
         },
+        myTodos: {
+            todos: [
+                {
+                    id: 1,
+                    text: "Go in city",
+                    completed: false
+                },
+                {
+                    id: 2,
+                    text: "Read good a book",
+                    completed: false
+                },
+                {
+                    id: 3,
+                    text: "Talk with my supruga",
+                    completed: false
+                },
+            ],
+            newTodoText: ''
+        }
     },
     getState() {
         return this._state;
@@ -91,6 +112,7 @@ let store = {
     dispatch(action) {
         this._state.profilePage = profileReducer(this._state.profilePage, action);
         this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
+        this._state.myTodos = todosReducer(this._state.myTodos, action);
 
         this._render(this._state);
     },

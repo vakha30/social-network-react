@@ -15,6 +15,9 @@ const Menu = () => {
             <li>
                 <NavLink to="/news" activeClassName={classes.active}>News</NavLink>
             </li>
+            <li>
+                <NavLink to="/mytodos" activeClassName={classes.active}>My todos</NavLink>
+            </li>
         </ul>
     )
 }
