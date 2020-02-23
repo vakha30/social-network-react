@@ -9,13 +9,11 @@ const AddPost = (props) => {
 
     const handleNewPostChange = () => {
         let text = newPostText.current.value;
-        let action = updatePostActionCreator(text)
-        props.dispatch(action);
-    }
+        props.updateNewPost(text);
+    };
     const addNewPost = () => {
-        let action = addPostActionCreator();
-        props.dispatch(action)
-    }
+        props.addNewPost();
+    };
     return (
         <div className={classes.add_post}>
             <textarea onChange={handleNewPostChange} ref={newPostText} value={props.newPost}  /><br />

@@ -6,10 +6,14 @@ import Post from "./post/Post";
 
 const MyPosts = (props) => {
 
-    const postsComponents =  props.posts.map(post => <Post dispatch={props.dispatch} key={post.id} post={post}/>)
+    const postsComponents =  props.profilePage.posts.map(post => <Post dispatch={props.dispatch} key={post.id} post={post}/>)
     return (
         <div className={classes.my_posts}>
-            <AddPost dispatch={props.dispatch} newPost={props.newPost} />
+            <AddPost
+                newPost={props.profilePage.newPost}
+                updateNewPost={props.updateNewPost}
+                addNewPost={props.addNewPost}
+            />
             <div className={classes.posts_wrap}>
                 {postsComponents}
             </div>

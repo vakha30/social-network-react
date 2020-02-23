@@ -3,7 +3,28 @@ const DELETE_TODO = "DELETE_TODO";
 const UPDATE_NEW_TEXT = "UPDATE_NEW_TEXT";
 const ADD_NEW_TODO = "ADD_NEW_TODO";
 
-const todosReducer = (state, action) => {
+let initionalState = {
+    todos: [
+        {
+            id: 1,
+            text: "Go in city",
+            completed: false
+        },
+        {
+            id: 2,
+            text: "Read good a book",
+            completed: false
+        },
+        {
+            id: 3,
+            text: "Talk with my supruga",
+            completed: false
+        },
+    ],
+    newTodoText: ''
+};
+
+const todosReducer = (state = initionalState, action) => {
     switch (action.type) {
         case CHECKED_TODO:
             state.todos = state.todos.map(todo => {

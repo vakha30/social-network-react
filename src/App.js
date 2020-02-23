@@ -11,7 +11,6 @@ import DialogsContainer from "./components/pages/dialogs/DialogsContainer";
 import MyTodos from "./components/pages/my-todos/MyTodos";
 
 const App = (props) => {
-
     return (
         <BrowserRouter>
             <div className="app-wrapper">
@@ -19,8 +18,7 @@ const App = (props) => {
                 <Sidebar/>
                 <main className="content">
                     <Route exact path="/" render={() => <Profile
-                        profilePage={props.state.profilePage}
-                        dispatch={props.dispatch}
+                        store={props.store}
                     />}
                     />
                     <Route path="/dialogs" render={() => <DialogsContainer
