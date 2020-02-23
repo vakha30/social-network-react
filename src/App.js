@@ -9,6 +9,7 @@ import Profile from "./components/pages/profile/Profile";
 import News from "./components/pages/news/News";
 import DialogsContainer from "./components/pages/dialogs/DialogsContainer";
 import MyTodos from "./components/pages/my-todos/MyTodos";
+import MyTodosContainer from "./components/pages/my-todos/MyTodosContainer";
 
 const App = (props) => {
     return (
@@ -27,9 +28,8 @@ const App = (props) => {
                     />}
                     />
                     <Route path="/news" render={() => <News/>}/>
-                    <Route path="/mytodos" render={() => <MyTodos
-                        myTodos={props.state.myTodos}
-                        dispatch={props.dispatch}
+                    <Route path="/mytodos" render={() => <MyTodosContainer
+                        store={props.store}
                     />}
                     />
                 </main>

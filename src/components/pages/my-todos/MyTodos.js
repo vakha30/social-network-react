@@ -6,13 +6,23 @@ import TodoForm from "./TodoForm";
 
 const MyTodos = (props) => {
 
-    const myTodosComponents = props.myTodos.todos.map(todo => <Todo key={todo.id} todo={todo} dispatch={props.dispatch} />)
+    const myTodosComponents = props.myTodos.todos.map(todo => {
+        return <Todo
+            deleteTodo={props.deleteTodo}
+            changeCompleted={props.changeCompleted}
+            key={todo.id}
+            todo={todo}/>
+    });
 
     return (
         <div className={classes.todos_wrap}>
             <h2>My todos</h2>
             {myTodosComponents}
-            <TodoForm newTodoText={props.myTodos.newTodoText} dispatch={props.dispatch} />
+            <TodoForm
+                newTodoText={props.myTodos.newTodoText}
+                updateNewText={props.updateNewText}
+                addNewTodo={props.addNewTodo}
+            />
         </div>
     )
 };

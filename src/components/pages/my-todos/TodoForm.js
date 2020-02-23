@@ -1,18 +1,15 @@
 import React from 'react';
 
 import classes from './MyTodos.module.css'
-import {addNewTodoActionCreator, updateNewTextActionCreator} from "../../../redux/reducers/todos-reducer";
 
 const TodoForm = (props) => {
     const handleChange = (e) => {
         let {value} = e.target;
-        const action = updateNewTextActionCreator(value);
-        props.dispatch(action);
+        props.updateNewText(value);
     };
 
     const handleClick = () => {
-        const action = addNewTodoActionCreator();
-        props.dispatch(action);
+        props.addNewTodo();
     };
 
     return (

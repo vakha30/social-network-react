@@ -15,13 +15,11 @@ const styles = {
 const Todo = (props) => {
 
     const handleChange = () => {
-        let action = checkedTodoActionCreator(props.todo.id);
-        props.dispatch(action);
+        props.changeCompleted(props.todo.id)
     };
 
     const handleClick = () => {
-        const action = deleteTodoActionCreator(props.todo.id);
-        props.dispatch(action);
+        props.deleteTodo(props.todo.id)
     }
 
     return (

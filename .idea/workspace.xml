@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fc85651-ece2-4e70-b34c-3cf23eb563dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/pages/profile/my-posts/MyPostsContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/my-todos/MyTodosContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/profile/my-posts/MyPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/profile/my-posts/MyPosts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/profile/my-posts/form/AddPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/profile/my-posts/form/AddPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/dialogs-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/dialogs-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/todos-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/todos-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/my-todos/MyTodos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/my-todos/MyTodos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/my-todos/Todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/my-todos/Todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/my-todos/TodoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/my-todos/TodoForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/pages/profile/my-posts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/pages/my-todos" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -49,11 +42,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gvard\Desktop\social-network-react\src\components\pages\my-todos" />
       <recent name="C:\Users\gvard\Desktop\social-network-react\src\components\pages\profile\my-posts" />
       <recent name="C:\Users\Proger\Desktop\social-network-react\src\components\pages\dialogs\messages" />
       <recent name="C:\Users\Proger\Desktop\social-network-react\src\components\pages\profile" />
       <recent name="C:\Users\Proger\Desktop\social-network-react\src\components\pages\news" />
-      <recent name="C:\Users\Proger\Desktop\social-network-react\src\components\pages\profile\my-posts\post" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -74,7 +67,7 @@
       <workItem from="1581685897059" duration="8480000" />
       <workItem from="1581746199175" duration="56000" />
       <workItem from="1581771974665" duration="5753000" />
-      <workItem from="1582443434036" duration="2051000" />
+      <workItem from="1582443434036" duration="4669000" />
     </task>
     <servers />
   </component>
